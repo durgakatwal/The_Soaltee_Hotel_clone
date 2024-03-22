@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+/* @media screen and (max-width: 800px) {
+    body{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller 
+    }
+  } */
+header{
+    width: 100%;
+    height: 650px;
+  }
+  .background video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    /* right: 0;
+    left: 0; */
+    /* min-height: 100%; */
+    /* height: 700px; */
+    /* min-width: 100vw; */
+    /* width: 100%; */
+    /* background-color: black; */
+  }
+  .background h1{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    position: fixed;
+    margin-top: 500px;
+    
+    position: absolute;
+  }
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0.2, 0.2, 0.2, 0.5);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    
+}
+.nav .navigation ul{
+    /* background-color: blue;  */
+    display: inline-flex;
+    margin-top: 50px;
+    /* justify-content: center; */
+    gap: 50px;
+}
+.nav .navigation li{
+    list-style: none;
+    font-size: 18px;
+    /* display: flex; */
+}
+.nav .join{
+   /* margin-left: 1000px; */
+   margin-top: 10px;   
+}
+.join svg{
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+}
+.join button{
+  padding: 12px;
+  width: 130px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: green;
+  margin-top: 15px;
+  border: 0px;
+}
+.join button:hover{
+  background-color: white;
+  color: green;
+  transition: all 1s ease-out;
+  cursor: pointer;
+  border: 1px solid green;
+}
+a:link{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover{
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active{
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 1250px;
+    margin-left: 50px;
+    border: 1px solid rgb(189, 170, 170);
+    border-radius: 5px;
+    /* position: absolute; */
+    /* object-position: bottom; */
+    /* top: 0; */
+}
+.about p{
+    width: 900px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(97, 90, 90);
+    font-size: 20px;
+    margin-left: 10px;
+    /* background-color: blue; */
+}
+.about img{
+  margin-left: 200px;
+}
+.ourhotel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.ourhotel h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+.ourhotel p{
+  color: black;
+  width: 900px;
+  color: rgb(97, 90, 90);
+  font-size: 17px;
+  /* background-color: blue; */
+}
+.location{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.location img{
+  width: 400px;
+  height: 450px;
+}
+.location h2{
+  color: white;
+}
+.location button{
+  padding: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  width: 150px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.location button:hover{
+  background-color: white;
+  color: green;
+  transition: all 1s ease-in;
+  cursor: pointer;
+  border: 1px solid green;
+}
+.location .loc1{
+  position: relative;
+  text-align: center;
+}
+.location .loc1 .content1{
+  position: absolute;
+ bottom: 20px;
+  left: 10px;
+  text-align: left;
+}
+
+.location .loc2{
+  position: relative;
+  text-align: center;
+}
+.location .loc2 .content2{
+  position: absolute;
+ bottom: 20px;
+  left: 10px;
+  text-align: left;
+}
+
+.location .loc3{
+  position: relative;
+  text-align: center;
+}
+.location .loc3 .content3{
+  position: absolute;
+ bottom: 20px;
+  left: 10px;
+  text-align: left;
+}
+.banner img{
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+  /* transform: scale(1.1); */
+}
+
+.Dine{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.Dine h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+.Dine p{
+  color: black;
+  width: 900px;
+  color: rgb(97, 90, 90);
+  font-size: 17px;
+  /* background-color: blue; */
+}
+.dinelist ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.dinelist ul li{
+  list-style: none;
+}
+.dinelist ul li a:link{
+  color: rgb(97, 90, 90);
+  font-size: 18px;
+}
+.dinelist ul li a:link:hover{
+  color: green;
+  text-decoration-line: underline;
+}
+.dinelist #grey:visited{
+  color: grey;
+}
+.bgvid2 video{
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  margin-top: 40px;
+}
+.nextbanner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.nextbanner .bancont{
+  text-align: left;
+  width: 700px;
+  /* background-color: brown; */
+
+}
+.nextbanner .bancont h1{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+font-weight:lighter;
+font: 900;
+}
+.nextbanner .bancont p{
+  font-size: 17px;
+  line-height: 30px;
+  color: rgb(97, 90, 90);
+}
+.nextbanner .bancont button{
+  background-color: green;
+  color: white;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 17px;
+  border: none;
+  margin-top: 50px;
+  width: 250px;
+  cursor: pointer;
+}
+.nextbanner .bancont button:hover{
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transition: all 1s ease-in-out;
+}
+.exp{
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.exp .expcon{
+  position: absolute;
+ bottom: 20px;
+  left: 10px;
+  text-align: left;
+}
+
+.exp .expcon h1{
+  color: white;
+  font-size: 60px;
+  /* margin-bottom: 90px; */
+  margin-left: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.exp .expcon button{
+  padding: 20px;
+  background-color: green;
+  color: white;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  margin-bottom: 70px;
+  margin-left: 25px;
+  border: 0.8px solid balck;
+}
+.exp .expcon button:hover{
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.brands{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 45px;
+  background-color: white;
+}
+.brands img{
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(36, 32, 32);
+  height: 350px;
+}
+footer .leftfoot{
+  width: 350px;
+  /* background-color: blue; */
+  color: white;
+  line-height: 30px;
+}
+footer .centerfoot{
+  color: white;
+  line-height: 40px;
+}
+footer .centerfoot li{
+  list-style: none;
+}
+footer .centerfoot svg{
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  }
+  footer .rightfoot{
+    color: white;
+    padding: 20px;
+  }
+footer .rightfoot span:hover{
+color: grey;
+cursor: pointer;
+text-decoration-line: underline;
+}
+footer .rightfoot svg{
+height: 16px;
+width: 16px;
+margin-right: 10px;
+}
+footer .rightfoot input{
+  padding: 13px;
+  width: 250px;
+  
+}
+footer .rightfoot .input{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+footer .rightfoot .input svg{
+  width: 60px;
+  height: 45px;
+  /* margin-top: 60px; */
+  background-color: orangered;
+  /* margin-bottom: 2px; */
+}
+footer .rightfoot .input svg:hover{
+cursor: pointer;
+}
+.copywrite{
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+  color: rgb(48, 44, 44);
+}

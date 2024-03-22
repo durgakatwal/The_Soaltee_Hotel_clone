@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(77, 29, 29);
+    text-align: center;
+    background-image: url(assets/photos/portbgi.webp);
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Portfolio</h1>
+    <div class="project">
+        <h3>Soaltee Hotel Website</h3>
+        <p>A Soaltee Hotel website built using HTML, CSS, JavaScript</p>
+        <p><a id="sh" href="#">View Project</a></p>
+    </div>
+    <div class="project">
+        <h3>Responsive Card Design</h3>
+        <p>A responsive Card designed using HTML, CSS, and JavaScript.</p>
+        <p><a id="card" href="#">View Project</a></p>
+    </div>
+    <div class="project">
+        <h3>E-commerce Website</h3>
+        <p>An e-commerce website built using HTML, CSS, JavaScript</p>
+        <p><a id="gada" href="#">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Netflix clone website</h3>
+        <p>Netflix clone website built using HTML, CSS, JavaScript </p>
+        <p><a id="netflix" href="#">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Amazon clone Website</h3>
+        <p>Amazon clone website built using HTML, CSS, JavaScript</p>
+        <p><a id="Amazon" href="#">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Coffee shop Website</h3>
+        <p>A Coffee shop website built using HTML, CSS, JavaScript</p>
+        <p><a id="coffee" href="#">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Louis Vuitton Website</h3>
+        <p>A Coffee shop website built using HTML, CSS, JavaScript</p>
+        <p><a id="lv" href="#">View Project</a></p>
+    </div>
+</div>
+
+<script>
+function navigateToPageOnClick(buttonID) {
+    document.getElementById(buttonID).addEventListener('click', function () {
+        var nextPage;
+        switch (buttonID) {
+            case 'sh':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                case 'card':
+                nextPage = 'file:///E:/Web%20Development-CWH/project%202(card2)/index.html';
+                break;
+                case 'gada':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                case 'netflix':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                case 'Amazon':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                case 'coffee':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                case 'lv':
+                nextPage = 'http://127.0.0.1:5500/index.html';
+                break;
+                default:
+                nextPage = 'index.html'; // Replace 'default.html' with the URL of a default page if no match is found
+        }
+        window.location.href = nextPage;
+    });
+}
+
+navigateToPageOnClick('sh');
+navigateToPageOnClick('card');
+</script>
+</body>
+</html>
